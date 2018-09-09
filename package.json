@@ -1,0 +1,41 @@
+{
+  "name": "america_asia_alliance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel start-dev react-dev",
+    "start-dev": "nodemon server/index",
+    "react-dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamarasinghe/AmericaAsiaAlliance.git"
+  },
+  "author": "Kavindu Amarasinghe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kamarasinghe/AmericaAsiaAlliance/issues"
+  },
+  "homepage": "https://github.com/Kamarasinghe/AmericaAsiaAlliance#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.3",
+    "npm-run-all": "^4.1.3",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
