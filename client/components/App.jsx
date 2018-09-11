@@ -1,8 +1,9 @@
+import Welcome from './Welcome.jsx';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
-import Welcome from './Welcome.jsx';
 import ConnectedSignIn from './SignIn.jsx';
 import ConnectedSignUp from './SignUp.jsx';
+import IntroTeamMission from './IntroTeamMission.jsx';
 
 
 const mapStateToProps = (state) => {
@@ -23,6 +24,7 @@ class App extends Component {
     return (
       <div>
         <Welcome />
+        <IntroTeamMission />
         {this.props.signInModal ? <ConnectedSignIn /> : <div />}
         {this.props.signUpModal ? <ConnectedSignUp /> : <div />}
       </div>
