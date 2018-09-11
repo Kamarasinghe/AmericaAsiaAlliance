@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
+import Welcome from './Welcome.jsx';
 import ConnectedSignIn from './SignIn.jsx';
 import ConnectedSignUp from './SignUp.jsx';
 
@@ -21,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Welcome />
         {this.props.signInModal ? <ConnectedSignIn /> : <div />}
         {this.props.signUpModal ? <ConnectedSignUp /> : <div />}
       </div>
