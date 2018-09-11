@@ -1,5 +1,4 @@
 import ConnectedApp from './App.jsx';
-import ConnectedSignIn from './SignIn.jsx';
 import { Provider } from 'react-redux';
 import React, { Component } from 'react';
 import Navigation from './Navigation.jsx';

@@ -1,10 +1,13 @@
-import ConnectedSignIn from './SignIn.jsx';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
+import ConnectedSignIn from './SignIn.jsx';
+import ConnectedSignUp from './SignUp.jsx';
+
 
 const mapStateToProps = (state) => {
   return {
-    signInModal: state.signInModal
+    signInModal: state.signInModal,
+    signUpModal: state.signUpModal
   };
 };
 
@@ -19,6 +22,7 @@ class App extends Component {
     return (
       <div>
         {this.props.signInModal ? <ConnectedSignIn /> : <div />}
+        {this.props.signUpModal ? <ConnectedSignUp /> : <div />}
       </div>
     );
   }

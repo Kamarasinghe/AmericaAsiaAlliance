@@ -18,7 +18,7 @@ export class Navigation extends Component {
           <NavbarBrand>America Asia Alliance</NavbarBrand>
           <Nav className='ml-auto' navbar>
             <NavItem>
-              <NavLink to='/signUp'>Sign Up</NavLink>
+              <NavLink to='/' onClick={() => this.props.toggleModal('signUpModal')}>Sign Up</NavLink>
             </NavItem>
             <NavItem>
               <NavLink to='/' onClick={() => this.props.toggleModal('signInModal')}>Sign In</NavLink>
