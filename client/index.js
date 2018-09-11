@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import Root from './components/Root.js';
+import store from './components/Redux/store/index';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Root store={store} />, document.getElementById('app'));
