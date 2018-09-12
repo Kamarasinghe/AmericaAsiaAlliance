@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-  Card, Button, CardImg, CardTitle, CardText, 
-  CardGroup,CardSubtitle, CardBody
+  Card, CardImg, CardTitle, CardText, CardGroup, CardBody
 } from 'reactstrap';
 
 const IntroTeamMission = () => {
