@@ -1,15 +1,19 @@
 import React from 'react';
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import { Button } from 'reactstrap';
 
-const Map = withScriptjs(withGoogleMap(props =>
-  <GoogleMap
-    defaultZoom={16}
-    defaultCenter={{ lat: 36.125113, lng: -115.190457 }}
-  >
-    <Marker
-      position={{ lat: 36.125113, lng: -115.190457 }}
-    />
-  </GoogleMap>
-));
+const Contact = () => {
+  return (
+    <div>
+      <h1>Contact Us</h1>
+      <h3>America Asia Economic Alliance</h3>
+      <p>3553 S Valley View Boulevard, Las Vegas, NV 89103</p>
+      <p>(702)997-3832</p>
+      <h3>Hours</h3>
+      <p>Monday - Friday: 9AM - 5PM</p>
+      <p>Saturday - Sunday: Closed</p>
+      <Button>GET IN TOUCH!</Button>
+    </div>
+  );
+};
 
-export default Map;
+export default Contact;
