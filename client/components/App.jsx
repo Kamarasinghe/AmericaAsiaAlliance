@@ -1,10 +1,13 @@
+import Map from './Map.jsx';
 import Welcome from './Welcome.jsx';
-import Map from './Contact.jsx';
+import Contact from './Contact.jsx';
 import { connect } from 'react-redux';
+import { Row, Col } from 'reactstrap';
 import React, { Component } from 'react';
 import ConnectedSignIn from './SignIn.jsx';
 import ConnectedSignUp from './SignUp.jsx';
 import IntroTeamMission from './IntroTeamMission.jsx';
+
 
 const mapStateToProps = (state) => {
   return {
@@ -25,12 +28,19 @@ class App extends Component {
       <div>
         <Welcome />
         <IntroTeamMission />
-        <Map
-          googleMapURL={process.env.GOOGLE_MAP_URL}
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
+        <Row>
+          <Col>
+            <Contact />
+          </Col>
+          <Col>
+            <Map
+              googleMapURL={process.env.GOOGLE_MAP_URL}
+              loadingElement={<div style={{ height: '100%' }} />}
+              containerElement={<div style={{ height: '400px' }} />}
+              mapElement={<div style={{ height: '100%' }} />}
+            />
+          </Col>
+        </Row>
         {this.props.signInModal ? <ConnectedSignIn /> : <div />}
         {this.props.signUpModal ? <ConnectedSignUp /> : <div />}
       </div>
